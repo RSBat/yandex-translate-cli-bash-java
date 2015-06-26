@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ $# -eq 0 ]
+if [ -z "$1" ]
   then
     echo "Enter text for translate"
     exit 1;
