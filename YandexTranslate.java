@@ -24,6 +24,7 @@ public class YandexTranslate {
 		int end = json.indexOf("]");
 		String translated = json.substring(start + 2, end - 1);
 		if (translated.equals(enteredText)) {
+		// if return equal of entered text - we need change direction of translation
 			return translate("en", enteredText);
 		} else return translated;
 	}
