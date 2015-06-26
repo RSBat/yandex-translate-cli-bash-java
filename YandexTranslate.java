@@ -16,7 +16,7 @@ public class YandexTranslate {
         try {
             connection = new URL(url).openConnection();
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.printf("Enter a text for translating after command");
+            System.out.printf("No text for translate");
         }
         InputStream response = connection.getInputStream();
         String json = new java.util.Scanner(response).nextLine();
